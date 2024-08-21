@@ -261,21 +261,14 @@ body {
 
 .scroller[data-animated="true"] {
   overflow: hidden;
-  -webkit-mask: linear-gradient(
-    90deg,
-    transparent,
-    white 20%,
-    white 80%,
-    transparent
-  );
+  -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
   mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
 }
 
 .scroller[data-animated="true"] .scroller__inner {
   width: max-content;
   flex-wrap: nowrap;
-  animation: scroll var(--_animation-duration, 40s)
-    var(--_animation-direction, forwards) linear infinite;
+  animation: scroll var(--_animation-duration, 40s) var(--_animation-direction, forwards) linear infinite;
 }
 
 .scroller[data-direction="right"] {
@@ -434,6 +427,7 @@ My team*/
 
 .secondary-team-container {
   padding-top: 10vh;
+  width: 120vh;
 }
 
 .secondary-team-container .my-team-heading h1 {
@@ -454,7 +448,7 @@ My team*/
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  background-color: var(--secondary-color-yellow);
+  background-color: rgb(202, 174, 103);
 }
 
 .member-container,
@@ -468,8 +462,7 @@ My team*/
 
 .member-image {
   background-image: url(images/user-image-default.jpg);
-  width: 97%;
-  height: 97%;
+  height: 18vh;
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 10px;
